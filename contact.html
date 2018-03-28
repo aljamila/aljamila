@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NexRise Events</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="purecss.css">
+ <link rel="stylesheet" href="style.css">
+ <link rel="icon" href="img/fav-icon.png" type="image/gif" sizes="16x16">
+<script src="jquery-3.2.1.slim.min.js"></script>
+<script src="spawner.js"></script>
+
+<style>
+
+
+.firstblock {background-color:#ee6e12;border:0;margin-top:10px;color:white;}
+.center {height:439px; width:100%; background-position:center center;background-repeat:no-repeat;margin:auto;background-size: cover; }
+.secondblock {background-color:#626262;color:white;border:0;margin-top:10px;margin-bottom:10px;}
+
+.col-sm-6 {padding:0;}
+.col-sm-6>p,h2 {padding:10px 40px;text-align: justify;font-weight: 500;letter-spacing: .05em;}
+
+
+.border {border:0.1px solid;}
+
+h1 {padding-left:20px;}
+.contact {border:.5px solid; margin:10px 10px 0 10px; border-radius:10px; background-color:#fdf9f9;}
+.contact p{padding:5px 5px 5px 20px;}
+.call::before {background-image:url('img/call2.png');background-size: 25px 25px; display:inline-block; width: 25px; height: 25px; content:"";padding-right:8px;background-repeat:no-repeat;}
+.mail::before {background-image:url('img/mail2.png');background-size: 25px 25px; display:inline-block; width: 25px; height: 25px; content:""; padding-right:8px;background-repeat:no-repeat;}
+.designation::before {background-image:url('img/man2.png');background-size: 25px 25px; display:inline-block; width: 25px; height:25px; content:""; padding-right:8px; background-repeat:no-repeat;}
+.addrblock {width:100%; background-color:#52575b; color:#fff; margin:auto; margin-top:20px; box-sizing: border-box;
+    padding: 10px;}
+
+.blockimage {width:90%; height:250px; border:1px solid; font-size:0px; margin:auto; overflow:hidden;}
+.image2 {width:33%; height:auto; border:1px solid; font-size:0px;}
+
+.mapcontain {max-width:600px;  margin:auto; margin-top:20px;}
+.map {max-width:650px;width:100%;height:250px;border:0;}
+
+
+.mailbox {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+</style>
+</head>
+
+<body>
+
+
+<header id="headercontent"></header>
+<div id="menutoggle" class="nav hide"></div>
+
+
+<div class="blockimage">
+<img class="image2" src="img/S&F/s1.jpg">
+<img class="image2" src="img/S&F/s2.jpg">
+<img class="image2" src="img/S&F/s3.jpg">
+</div>
+
+<h1>Contact-Us</h1>
+
+<div class="container" style="border:0;">
+
+<div class="col-sm-6">
+<div class="contact">
+<h2>SHOWROOM</h2>
+
+<p class="call">06-7481296</p>
+<p class="call">06-7481297</p>
+<p class="mail">aljamilamarble@yahoo.com</p>
+<p class="designation">Ajman-7867, UAE.</p>
+</div>
+</div>
+
+<div class="col-sm-6">
+<div class="contact">
+<h2>FACTORY</h2>
+
+<p class="call">06-7485225</p>
+<p class="call">06-7485226</p>
+<p class="mail">aljamilamarble@yahoo.com</p>
+<p class="designation">Ajman-7867, UAE.</p>
+</div>
+</div>
+
+</div>
+
+<div class="addrblock">
+Ajman
+</div>
+
+
+<div class="container" style="border:0; background-color:#f2f2f2;">
+<div class="col-sm-6">
+
+
+<div class="mapcontain">
+<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d901.1984108106066!2d55.47836902922507!3d25.378231598988293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f586318c0e61f%3A0xa29fde898489b4e!2sAl+Jamila+Marble+Working+Showroom!5e0!3m2!1sen!2sae!4v1522245732650" frameborder="0" style="border:0" allowfullscreen></iframe>
+<p class="call">
+06-7485225</p>
+<p class="mail">aljamilamarble@yahoo.com
+</p>
+</div>
+
+
+</div>
+
+<div class="col-sm-6 mailbox">
+
+  <form action="http://free.allforms.mailjol.net/u/b82b72fa.php" method="post">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="Bahrain">UAE</option>
+      <option value="UAE">Bahrain</option>
+      <option value="Saudi Arabia">Saudi Arabia</option>
+      <option value="Oman">Oman</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" name="submit" value="Submit">
+  </form>
+
+</div>
+</div>
+
+
+
+
+<div id="bottomcontent" class="container bottomcontent"></div>
+<div id="copyright" class="bottomfooter"></div>
+  
+
+
+
+<script>
+$(document).ready(function(){
+
+	$("#toggle").click(function(){
+		$("#togglee").toggleClass("a b");
+	});
+	
+	$("#toggle").click(function(){
+		$("#arrowtoggle").toggleClass("arrowimg1 arrowimg2");
+	});
+	
+	$("#menubars").click(function(){
+		
+		$("#menutoggle").toggleClass("hide show");
+	});
+	
+	$("#menubars").click(function(){
+		
+		$("#menubars").toggleClass("menu menuon");
+	});
+	
+
+});
+
+
+
+
+spawnCall();
+
+document.getElementById("contact").classList.add("active");
+
+	</script>
+</body>
+</html>

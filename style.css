@@ -1,14 +1,21 @@
-body {margin:0;display:block;font-weight: 700;}
-header {height :84px; overflow:hidden;}
+body {margin:0;display:block;font-weight: 700; font: 300 normal 15px/1.4 Raleway,sans-serif;letter-spacing: .05em;}
+header {height :150px; overflow:hidden; display:block;}
 .contactheader{ float:right; text-transform: uppercase; margin-top:22px; padding-right:40px; }
 .contactnumber{ color: #ee6e12; font-weight: 700;font-size: 18px;font-family: Lato,sans-serif;}
 
-.mainlogo {position:absolute; top:0; left:calc(50% - 40px); overflow:hidden; height:80px;}
-.mainlogoimg {height:100%;}
+
+
+.logoeng {height:120px; margin-top:15px;border:0px solid;}
+.mainlogo {position:absolute; top:0; left:calc(50% - 75px); overflow:hidden; height:150px; display:block;}
+.mainlogo>img {margin:auto;height:100%;}
+.logoarb {height:120px; float:right; margin-top:15px;}
+@media only screen and (max-width:768px){
+.logoeng {height:120px; margin-top:15px; width:calc(100% - 57px);}}
+
 
 /* menubar */
-.menuholder{width:50px;height:30px;float:right;margin:25px 15px 0 0;}
-.menu{height:22px;width:50px;}
+.menuholder{width:40px;height:30px;float:right;margin:55px 15px 0 0; z-index:1000; border:0px solid;}
+.menu{height:22px;width:40px;}
 .linebar {border-radius: 2px;height:4px;width:40px;background-color:#ee6e12;}
 .linebar:nth-child(1) {margin-bottom:5px;transition: .5s;}
 .linebar:nth-child(2) {margin-bottom:5px;transition: .5s;}
@@ -28,7 +35,7 @@ header {height :84px; overflow:hidden;}
 .nav a:hover::after {width:100%;left:0;}
 .nav .active {background-color:rgb(238, 110, 18);}
 .dropdown {float:left;}
-.dropdown-content {display:none;position:absolute;min-width:150px;top:122px;z-index:3;}
+.dropdown-content {display:none;position:absolute;min-width:150px;top:191px;z-index:3;}
 @media only screen and (min-width:768px) {.dropdown:hover .dropdown-content {display:block;} }
 @media only screen and (max-width:768px) {
 .nav>ul>li {float:none;}
@@ -44,7 +51,7 @@ header {height :84px; overflow:hidden;}
 .nav .active {background-color:rgb(238, 110, 18);}
 .hide {display:none;}
 .show {display:block;}
-.dropdown-content {top:199px;}
+.dropdown-content {top:275px;}
 .nav>ul {width:300px;}
 }
 
@@ -63,7 +70,7 @@ header {height :84px; overflow:hidden;}
 .button:hover {background-color:#663399;}
 @media only screen and (max-width:600px) {.section_button {width:100%;}}
 
-.logoarb {float:right; height:80px; width:200px;}
+
 .logoarbfooter {display:block; max-height:160px; width:100%; max-width:400px; margin:auto;}
 .logoengfooter {display:block; max-height:160px; width:100%; max-width:500px; margin:auto;}
 

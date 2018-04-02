@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NexRise Events</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="purecss.css">
+ <link rel="stylesheet" href="style.css">
+ <link rel="icon" href="img/fav-icon.png" type="image/gif" sizes="16x16">
+<script src="jquery-3.2.1.slim.min.js"></script>
+<script src="spawner.js"></script>
+<link rel="stylesheet" href="galleryimg.css">
+<style>
+
+
+
+</style>
+</head>
+
+<body>
+
+
+<header id="headercontent"></header>
+<div id="menutoggle" class="nav hide"></div>
+
+<h2>Granite</h2>
+
+
+
+
+</br>
+
+  <div class="gallery">
+  
+  <ul>
+    <li class="gallery__item"><a class="gallery__itemLink" href="https://unsplash.it/1920/1080?image=772" data-rel="aiLightbox"><img class="gallery__itemThumb" src="https://unsplash.it/150/150?image=772"/></a></li>
+    <li class="gallery__item"><a class="gallery__itemLink" href="https://unsplash.it/1920/1080?image=773" data-rel="aiLightbox"><img class="gallery__itemThumb" src="https://unsplash.it/150/150?image=773"/></a></li>
+    <li class="gallery__item"><a class="gallery__itemLink" href="https://unsplash.it/1920/1080?image=774" data-rel="aiLightbox"><img class="gallery__itemThumb" src="https://unsplash.it/150/150?image=774"/></a></li>
+    <li class="gallery__item"><a class="gallery__itemLink" href="https://unsplash.it/1920/1080?image=775" data-rel="aiLightbox"><img class="gallery__itemThumb" src="https://unsplash.it/150/150?image=775"/></a></li>
+    <li class="gallery__item"><a class="gallery__itemLink" href="https://unsplash.it/1920/1080?image=776" data-rel="aiLightbox"><img class="gallery__itemThumb" src="https://unsplash.it/150/150?image=776"/></a></li>
+    <li class="gallery__item"><a class="gallery__itemLink" href="https://unsplash.it/1920/1080?image=777" data-rel="aiLightbox"><img class="gallery__itemThumb" src="https://unsplash.it/150/150?image=777"/></a></li>
+    <li class="gallery__item"><a class="gallery__itemLink" href="https://unsplash.it/1920/1080?image=778" data-rel="aiLightbox"><img class="gallery__itemThumb" src="https://unsplash.it/150/150?image=778"/></a></li>
+    <li class="gallery__item"><a class="gallery__itemLink" href="https://unsplash.it/1920/1080?image=779" data-rel="aiLightbox"><img class="gallery__itemThumb" src="https://unsplash.it/150/150?image=779"/></a></li>
+  </ul>
+</div>
+
+
+
+
+<div id="bottomcontent" class="container bottomcontent"></div>
+<div id="copyright" class="bottomfooter"></div>
+  
+
+
+
+<script>
+$(document).ready(function(){
+
+	$("#toggle").click(function(){
+		$("#togglee").toggleClass("a b");
+	});
+	
+	$("#toggle").click(function(){
+		$("#arrowtoggle").toggleClass("arrowimg1 arrowimg2");
+	});
+	
+	$("#menubars").click(function(){
+		
+		$("#menutoggle").toggleClass("hide show");
+	});
+	
+	$("#menubars").click(function(){
+		
+		$("#menubars").toggleClass("menu menuon");
+	});
+	
+
+});
+
+
+
+
+spawnCall();
+
+document.getElementById("products").classList.add("active");
+
+	</script>
+	
+<script src="Swipe.js"></script>
+<script src="galleryimg.js"></script>
+
+	
+</body>
+</html>

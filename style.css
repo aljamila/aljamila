@@ -10,7 +10,7 @@ header {height :150px; overflow:hidden; display:block;}
 .mainlogo>img {margin:auto;height:100%;}
 .logoarb {height:120px; float:right; margin-top:15px;}
 @media only screen and (max-width:768px){
-.logoeng {height:120px; margin-top:15px; width:calc(100% - 57px);}}
+.logoeng {height:auto; max-height:120px; margin-top:15px; width:calc(100% - 100px); max-width:360px;}}
 
 
 /* menubar */

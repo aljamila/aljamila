@@ -267,4 +267,4 @@ var lb = new Lightbox({
     counter: true, // boolean
     slideSpeed: 500 });
 
-}, 2000); // How long do you want the delay to be (in milliseconds)?
+}, 500); // How long do you want the delay to be (in milliseconds)?

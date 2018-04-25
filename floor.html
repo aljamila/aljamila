@@ -7,7 +7,7 @@
  <link rel="stylesheet" href="purecss.css">
  <link rel="stylesheet" href="style.css">
  <link rel="icon" href="img/fav-icon.png" type="image/gif" sizes="16x16">
-<script src="jquery-3.2.1.slim.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="spawner.js"></script>
 <link rel="stylesheet" href="galleryimg.css">
 
@@ -23,7 +23,7 @@
 <header id="headercontent"></header>
 <div id="menutoggle" class="nav hide"></div>
 
-<h2>Floors Coming Soon</h2>
+<h2>Floors</h2>
 
 
 
@@ -32,18 +32,8 @@
 
   <div class="gallery">
   
-  <ul>
+  <ul class="jamila-tag" data-jamila-tag="floors">
 	
-	<li class="gallery__item"><a class="gallery__itemLink" href="img/floors/floor1.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/floors/floor1.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/floors/floor2.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/floors/floor2.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/floors/floor3.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/floors/floor3.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/floors/floor4.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/floors/floor4.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/floors/floor5.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/floors/floor5.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/floors/floor6.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/floors/floor6.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/floors/floor7.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/floors/floor7.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/floors/floor8.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/floors/floor8.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/floors/floor9.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/floors/xfloor9.jpg"/></a></li>
-
 
 	
 	
@@ -80,7 +70,7 @@ $(document).ready(function(){
 		
 		$("#menubars").toggleClass("menu menuon");
 	});
-	
+
 
 });
 
@@ -92,6 +82,24 @@ spawnCall();
 document.getElementById("products").classList.add("active");
 
 	</script>
+
+<script>
+
+// http://paislee.io/how-to-use-github-as-a-minimal-cms/
+$(document).ready(function() {
+    !function(config) {
+        $('.jamila-tag').each(function() {
+            var tagName = $(this).data('jamila-tag');
+            $(this).load(config.prefix + tagName + '.html?cb=' + (new Date().getTime()));
+        });
+    }({
+        prefix: 'https://raw.githubusercontent.com/aljamilamarbleworking/aljamilamarbleworking.github.io/master/tags/'
+    });
+});
+//end
+
+</script>
+	
 	
 <script src="Swipe.js"></script>
 <script src="galleryimg.js"></script>

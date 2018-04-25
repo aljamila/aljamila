@@ -7,7 +7,7 @@
  <link rel="stylesheet" href="purecss.css">
  <link rel="stylesheet" href="style.css">
  <link rel="icon" href="img/fav-icon.png" type="image/gif" sizes="16x16">
-<script src="jquery-3.2.1.slim.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="spawner.js"></script>
 <link rel="stylesheet" href="galleryimg.css">
 
@@ -23,7 +23,7 @@
 <header id="headercontent"></header>
 <div id="menutoggle" class="nav hide"></div>
 
-<h2>Marble Coming Soon</h2>
+<h2>Marble</h2>
 
 
 
@@ -32,35 +32,9 @@
 
   <div class="gallery">
   
-  <ul>
+  <ul class="jamila-tag" data-jamila-tag="marble">
 	
-	<li class="gallery__item"><a class="gallery__itemLink" href="img/marble/m601.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/marble/xm601.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/marble/m602.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/marble/xm602.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/marble/m603.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/marble/xm603.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/marble/m604.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/marble/xm604.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/marble/m605.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/marble/xm605.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/marble/m606.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/marble/xm606.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/marble/m607.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/marble/xm607.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/marble/m608.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/marble/xm608.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/marble/m609.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/marble/xm609.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/marble/m610.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/marble/xm610.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/marble/m611.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/marble/xm611.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/marble/m612.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/marble/xm612.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/marble/m613.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/marble/xm613.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/marble/m614.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/marble/xm614.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/marble/m615.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/marble/xm615.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/marble/m616.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/marble/xm616.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/marble/m617.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/marble/xm617.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/marble/m618.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/marble/xm618.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/marble/m619.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/marble/xm619.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/marble/m620.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/marble/xm620.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/marble/m621.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/marble/xm621.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/marble/m622.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/marble/xm622.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/marble/m623.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/marble/xm623.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/marble/m624.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/marble/xm624.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/marble/m625.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/marble/xm625.jpg"/></a></li>
 
-	
 	
   </ul>
 </div>
@@ -107,6 +81,26 @@ spawnCall();
 document.getElementById("products").classList.add("active");
 
 	</script>
+	
+
+
+<script>
+
+// http://paislee.io/how-to-use-github-as-a-minimal-cms/
+$(document).ready(function() {
+    !function(config) {
+        $('.jamila-tag').each(function() {
+            var tagName = $(this).data('jamila-tag');
+            $(this).load(config.prefix + tagName + '.html?cb=' + (new Date().getTime()));
+        });
+    }({
+        prefix: 'https://raw.githubusercontent.com/aljamilamarbleworking/aljamilamarbleworking.github.io/master/tags/'
+    });
+});
+//end
+
+</script>
+	
 	
 <script src="Swipe.js"></script>
 <script src="galleryimg.js"></script>

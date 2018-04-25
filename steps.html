@@ -7,7 +7,7 @@
  <link rel="stylesheet" href="purecss.css">
  <link rel="stylesheet" href="style.css">
  <link rel="icon" href="img/fav-icon.png" type="image/gif" sizes="16x16">
-<script src="jquery-3.2.1.slim.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="spawner.js"></script>
 <link rel="stylesheet" href="galleryimg.css">
 
@@ -27,17 +27,8 @@
 
 <div class="gallery">
   
-  <ul>
+  <ul class="jamila-tag" data-jamila-tag="steps">
 	
-	<li class="gallery__item"><a class="gallery__itemLink" href="img/steps/step1.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/steps/step1.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/steps/step2.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/steps/step2.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/steps/step3.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/steps/step3.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/steps/step4.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/steps/step4.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/steps/step5.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/steps/step5.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/steps/step6.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/steps/xstep6.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/steps/step7.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/steps/xstep7.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/steps/step8.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/steps/xstep8.jpg"/></a></li>
-    <li class="gallery__item"><a class="gallery__itemLink" href="img/steps/step9.jpg" data-rel="aiLightbox"><img class="gallery__itemThumb" src="img/steps/step9.jpg"/></a></li>
 
 	
   </ul>
@@ -88,6 +79,23 @@ spawnCall();
 document.getElementById("products").classList.add("active");
 
 	</script>
+	
+<script>
+
+// http://paislee.io/how-to-use-github-as-a-minimal-cms/
+$(document).ready(function() {
+    !function(config) {
+        $('.jamila-tag').each(function() {
+            var tagName = $(this).data('jamila-tag');
+            $(this).load(config.prefix + tagName + '.html?cb=' + (new Date().getTime()));
+        });
+    }({
+        prefix: 'https://raw.githubusercontent.com/aljamilamarbleworking/aljamilamarbleworking.github.io/master/tags/'
+    });
+});
+//end
+
+</script>
 	
 <script src="Swipe.js"></script>
 <script src="galleryimg.js"></script>

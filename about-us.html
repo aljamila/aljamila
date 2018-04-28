@@ -115,8 +115,68 @@
 
 
 <!-- Container for the image gallery class=""-->
-<div class="slidecontainer jamila-tag" data-jamila-tag="about">
+<div class="slidecontainer">
+ <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="img/S&F/xs4.jpg" style="width:100%">
+  </div>
 
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="img/S&F/xs5.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="img/S&F/xs7.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="img/S&F/xs9.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="img/S&F/xs10.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="img/S&F/xs11.jpg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img/S&F/xs4.jpg" style="width:100%" onclick="currentSlide(1)" alt="1">
+    </div>
+    <div class="column"> 
+      <img class="demo cursor" src="img/S&F/xs5.jpg" style="width:100%" onclick="currentSlide(2)" alt="2">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/S&F/xs7.jpg" style="width:100%" onclick="currentSlide(3)" alt="3">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/S&F/xs9.jpg" style="width:100%" onclick="currentSlide(4)" alt="4">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/S&F/xs10.jpg" style="width:100%" onclick="currentSlide(5)" alt="5">
+    </div> 
+    <div class="column">
+      <img class="demo cursor" src="img/S&F/xs11.jpg" style="width:100%" onclick="currentSlide(6)" alt="6">
+    </div>
+  </div>
 </div>
 
 
@@ -136,25 +196,6 @@
 <div id="bottomcontent" class="container bottomcontent"></div>
 <div id="copyright" class="bottomfooter"></div>
   
-
-
-<script>
-
-// http://paislee.io/how-to-use-github-as-a-minimal-cms/
-$(document).ready(function() {
-    !function(config) {
-        $('.jamila-tag').each(function() {
-            var tagName = $(this).data('jamila-tag');
-            $(this).load(config.prefix + tagName + '.html?cb=' + (new Date().getTime()));
-        });
-    }({
-        prefix: 'https://raw.githubusercontent.com/aljamilamarbleworking/aljamilamarbleworking.github.io/master/tags/'
-    });
-});
-//end
-
-</script>
-
 
 <script>
 $(document).ready(function(){
@@ -180,7 +221,14 @@ $(document).ready(function(){
 
 });
 
-setTimeout(function (){
+spawnCall();
+
+document.getElementById("about").classList.add("active");
+
+</script>
+
+
+<script>
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -212,15 +260,10 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
-}, 500); // How long do you want the delay to be (in milliseconds)?
+
+</script>
 
 
-spawnCall();
-
-document.getElementById("about").classList.add("active");
-
-	</script>
-	
 
 
 

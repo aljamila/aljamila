@@ -60,8 +60,8 @@
     <div class="photo-gallery">
         <div class="container">
             <div class="intro">
-                <h2 class="text-center">Granite</h2>
-                <p class="text-center">We have the best collections of granite for your needs</p>
+                <h2 class="text-center">Kitchen Tops</h2>
+                <p class="text-center">We have the best collections of Kitchen Tops for your needs</p>
             </div>
             <div id="mygallery" class="row photos">
 <!--                 <div class="col-sm-6 col-md-4 col-lg-3 item"><a data-lightbox="photos" href="assets/img/desk.jpg"><img class="img-fluid" src="assets/img/desk.jpg"></a></div>
@@ -142,7 +142,7 @@ $.ajax({
 <script>
 
 var stuff;
-$.get('https://raw.githubusercontent.com/aljamilamarble/aljamilamarble.github.io/master/granite/a-tags.txt', function (response) {
+$.get('https://raw.githubusercontent.com/aljamilamarble/aljamilamarble.github.io/master/tops/a-tags.txt', function (response) {
 
     stuff = response.split("\n");
 	
@@ -153,7 +153,7 @@ $.get('https://raw.githubusercontent.com/aljamilamarble/aljamilamarble.github.io
 	console.log(filtered);
 	$.each(filtered, function(index, value) {
 		console.log(value);
-		var link = "https://raw.githubusercontent.com/aljamilamarble/aljamilamarble.github.io/master/granite/" + value
+		var link = "https://raw.githubusercontent.com/aljamilamarble/aljamilamarble.github.io/master/tops/" + value
 		var linkjpg = link + ".jpg"
 		//console.log(linkjpg);
 		
@@ -171,12 +171,13 @@ $.get('https://raw.githubusercontent.com/aljamilamarble/aljamilamarble.github.io
 		
 	})
 });
+
 </script>
 
 <script>
 
 $(".product").addClass("active");
-$("a[href$='granite.html']").addClass("active");
+$("a[href$='top.html']").addClass("active");
 
 </script>
 
